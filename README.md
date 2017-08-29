@@ -1,1 +1,3 @@
-This is the very latest version of the README file for the basic Introduction To GPU Programming Course.
+Its ME!! I am new and different!!
+
+Josh B

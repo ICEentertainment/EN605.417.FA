@@ -1,0 +1,22 @@
+#line 194 "D:/Visual Studio 2015/VC/bin/../../VC/INCLUDE\\vcruntime.h"
+typedef unsigned long long size_t;
+#include "crt/device_runtime.h"
+#line 13 "hello-world.cu"
+__global__ __var_used__ extern void _Z5helloPcPi(char *, int *);
+#include "common_functions.h"
+#line 13 "hello-world.cu"
+__global__ __var_used__ void _Z5helloPcPi(
+#line 13 "hello-world.cu"
+char *a, 
+#line 13 "hello-world.cu"
+int *b){
+#line 13 "hello-world.cu"
+{
+#line 14 "hello-world.cu"
+{
+#line 15 "hello-world.cu"
+(a[(threadIdx.x)]) += (b[(threadIdx.x)]);
+#line 16 "hello-world.cu"
+} 
+#line 16 "hello-world.cu"
+}}

@@ -3,15 +3,14 @@
 // of offsets. Then the offsets are added in parallel to produce the string "World!"
 // By Ingemar Ragnemalm 2010
 // http://computer-graphics.se/hello-world-for-cuda.html
-#include "cuda_runtime.h"
-#include <device_launch_parameters.h>
-
+ 
 #include <stdio.h>
  
 const int N = 16; 
 const int blocksize = 16; 
  
-__global__ void hello(char *a, int *b) 
+__global__ 
+void hello(char *a, int *b) 
 {
 	a[threadIdx.x] += b[threadIdx.x];
 }
@@ -41,5 +40,5 @@ int main()
 	cudaFree( bd );
 	
 	printf("%s\n", a);
-	return 0;
+	return EXIT_SUCCESS;
 }
